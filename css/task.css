@@ -1,0 +1,140 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .card {
+    border: 2px dashed #673ab7;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .toggle-switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle-switch label {
+    cursor: pointer;
+  }
+  .toggle-switch input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .toggle-switch input[type="checkbox"] + span.toggle-slider {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+  }
+  .toggle-switch input[type="checkbox"] + span.toggle-slider:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+  }
+  .toggle-switch input[type="checkbox"]:checked + span.toggle-slider {
+    background-color: #2196f3;
+  }
+  .toggle-switch input[type="checkbox"]:checked + span.toggle-slider:before {
+    transform: translateX(20px);
+  }
+  .instructions {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .download-pdf {
+    float: right;
+  }
+  .admin-mobile-numbers {
+    margin-top: 20px;
+  }
+  .delete-btn {
+    color: red;
+    cursor: pointer;
+  }
+  .btn-sm {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.875rem;
+  }
+  .text-muted {
+    color: #6c757d !important;
+  }
+  /* Two-column layout */
+  .two-columns {
+    display: flex;
+    gap: 20px;
+  }
+  .column {
+    flex: 1;
+  }
+  .btn-light {
+    background-color: #e9ecef;
+    color: #6c757d;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+  }
+  .btn-primary {
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+  }
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .alert-success i {
+    color: #155724;
+    margin-right: 5px;
+  }
+  .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  .input-group input {
+    flex: 1;
+  }
+  .btn-sm {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.875rem;
+  }
+  .text-muted {
+    color: #6c757d !important;
+  }
+  .delete-btn {
+    color: red;
+    cursor: pointer;
+  }
+   /* Enable CRM Lead and Call Barging */
+  .dashed-border{
+    border: 2px dashed #673ab7;
+  }
+  .label-text{
+    font-weight: bold;
+  }
+  .value-text{
+    font-weight: bold;
+    margin-left: 10px;
+  }

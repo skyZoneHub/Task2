@@ -1,0 +1,72 @@
+:root {
+  --card: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --radius: none;
+  --transition-speed: 0.4s;
+}
+body {
+  background-color: #f8f9fa;
+}
+.sidebar {
+  background: white;
+  padding: 1rem;
+  border-right: 1px solid #dee2e6;
+  box-shadow: var(--card);
+}
+.tab-card {
+  display: block;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+.tab-card:hover {
+  background-color: #f1f1f1;
+}
+.tab-card.active-tab {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+.cont {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(85, 94, 107);
+  margin: 4px;
+  transition: all var(--transition-speed);
+}
+.open .bar1 {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+.open .bar2 {
+  opacity: 0;
+}
+.open .bar3 {
+  transform: translate(0, -8px) rotate(45deg);
+}
+@media (max-width: 991px) {
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100vh;
+    z-index: 1050;
+    overflow-y: auto;
+  }
+  .sidebar.active {
+    display: block;
+    background-color: #fff;
+  }
+}
+@media (max-width: 768px) {
+  .dropdown-toggle {
+    font-size: 0.9rem;
+  }
+}
