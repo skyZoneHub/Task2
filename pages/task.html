@@ -24,11 +24,14 @@
       <div class="card">
         <div class="d-flex">
           <div class>Enable Admin SMS</div>
-          <div class="form-check fs-5 form-switch ms-3"><input class="form-check-input " type="checkbox"> </div>
+          <div class="form-check fs-5 form-switch ms-3">
+            <input class="form-check-input" type="checkbox" id="enableAdminSms">
+            <label for="enableAdminSms" class="form-check-label">Enable Admin SMS</label>
+          </div>
         </div>
         <div class="form-group">
           <label>Select Call Status</label>
-          <select class="form-select">
+          <select class="form-select" title="Select Call Status">
             <option value="Select">Select An Option</option>
             <option value="Option1">Option 1</option>
             <option value="Option2">Option 2</option>
@@ -40,7 +43,10 @@
       <div class="card">
         <div class="d-flex">
           <div class>Enable CRM Lead</div>
-          <div class="form-check fs-5 form-switch ms-3"><input class="form-check-input " type="checkbox"> </div>
+          <div class="form-check fs-5 form-switch ms-3">
+            <input class="form-check-input" type="checkbox" id="enableCrmLead" title="Enable CRM Lead">
+            <label for="enableCrmLead" class="form-check-label">Enable CRM Lead</label>
+          </div>
         </div>
         <div class="form-group">
           <label>Enter URL</label>
@@ -50,7 +56,10 @@
         <div class="card">
           <div class="d-flex">
             <div class>Enable Google Sheet</div>
-            <div class="form-check fs-5 form-switch ms-3"><input class="form-check-input " type="checkbox"> </div>
+            <div class="form-check fs-5 form-switch ms-3">
+              <input class="form-check-input" type="checkbox" id="enableGoogleSheet" title="Enable Google Sheet">
+              <label for="enableGoogleSheet" class="form-check-label">Enable Google Sheet</label>
+            </div>
           </div>
           <div class="form-group">
             <label>Enter URL</label>
@@ -62,10 +71,9 @@
                 <h5 class="text-decoration-underline">INSTRUCTIONS:-</h5>
               </div>
               <div class="col-sm-5 ">
-                <button type="button" class="btn  rounded-3 text-primary"
-                  style=" border: 1px solid rgb(64, 119, 248); background: #f1f5fc;">Download
+                <buttonbutton type="button" class="btn  rounded-3 text-primary custom-download-btn">Download
                   PDF
-                  <i class="fa-solid fa-circle-down fa-sm" style="color: #6698f0;"></i>
+                  <i class="fa-solid fa-circle-down fa-sm custom-icon"></i>
                 </button>
               </div>
             </div>
@@ -122,7 +130,7 @@
           <div class="form-group">
             <div class="row">
               <div class="col-sm-11">
-                <div class="bg-body-tertiary p-2 rounded-2" style="width:470px;"><span class="ms-3 ">564345678</span>
+                <div class="bg-body-tertiary p-2 rounded-2 custom-width"><span class="ms-3 ">564345678</span>
                 </div>
               </div>
               <div class="col-sm-1 mt-1">
